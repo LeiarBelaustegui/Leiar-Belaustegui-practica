@@ -1,0 +1,275 @@
+/*@import url(fonts.css);*/
+
+* {
+    box-sizing: border-box; /* il comportamento di default è content-box, con border-box, larghezza e altezza includono anche il padding e i bordi, rendendo più intutivo il calcolo delle dimensioni */
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 83px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.contenitore {
+    max-width: 1100px; /* o quello che volete */
+    margin: 0 auto; /* per centrare quel contenitore nella pagina */
+}
+
+/* Navbar*/
+header {
+    background-color: white;
+    color: #7E6B4C;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+    align-items: center;
+    position: fixed;
+    width: 1440px;
+    height: 104px;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 45px;
+    margin-right:100px;
+}
+
+header a {
+    font-family: "Poppins", serif;
+   font-weight: 500;
+   font-style: normal;
+    color: #7E6B4C;
+    text-decoration: none;
+}
+
+header p a{
+    color: #BD4742;
+    font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+header a:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+/* Navbar final*/
+
+/* Portada*/
+.containerimg img{
+    width:100% ; 
+  }
+  
+  img{
+    display: flex;
+    align-items: center;
+  }
+  
+  
+    /*text portada*/
+    .content{
+        top: 5rem;
+        left: 222px;
+        position: absolute;
+          align-items: center;
+          align-items: center;
+          justify-content: center;
+          margin-top: 300px;
+          width: auto;
+      }
+      .content h1{
+        font-family: "Italiana", serif;
+       font-weight: 400;
+        font-style: normal;
+          font-size: 128px;
+          text-decoration: 2px underline;
+          text-underline-offset: 10px;
+          color: #fff;
+         text-align: left;
+      }
+
+  .content p{
+    text-align: left;
+   display:inline-block;
+   width: 552px;
+   color: white;
+   font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+   font-size: 25px;
+   line-height: 122%;
+   }
+
+
+/* Portada fin*/
+
+/* Intro*/
+.intro {
+padding: 100px;
+background-color: #BD4742;
+width: 1440px;
+height: 118px;
+text-align: right;
+}
+
+
+/* Intro fin*/
+
+/* Activity Sections */
+/* Sections Titles */
+h3 {
+    font-size: 30px;
+    color: black;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 120%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+p {
+    width: 456px;
+    font-size: 16px;
+    line-height: 130%;
+    color: black;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Sections with Single Image */
+.single-image-section {
+    background-color: #F5F0E7;
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    padding: 200px 150px;
+    gap: 40px;
+}
+
+.single-image-section .text {
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+.single-image-section .text h3 {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.single-image-section .text p {
+    text-align: left;
+    width: 456px;
+}
+
+.single-image-section img {
+    width: 456px;
+    height: 304px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Sections with Multiple Images */
+.multi-image-section {
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.multi-image-section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.multi-image-section p {
+    max-width: 800px;
+    margin: 0 auto 100px;
+    text-align: left;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 264px;
+    height: 219px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* footer*/
+  footer {
+    height: 100px;
+   background-color: #879465;
+   color: white;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    width: 100%;
+}
+footer small {
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+footer nav ul {
+    margin-top: 20px;
+    display: flex;
+    list-style-type: none;
+    gap: 32px;
+    
+}
+
+footer nav ul a {
+    color: rgba(255, 255, 255, 0.6); 
+    font-size: 14px;
+}
+
+
+@media (max-width:700px) /* o la misura che volete */  {
+    .flex {
+        flex-direction: column-reverse;
+    }
+
+    header {
+        flex-direction: column;
+        align-items:start
+    }
+
+    div.flex-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .testo, .immagine {
+        width: 100%;
+    }
+}

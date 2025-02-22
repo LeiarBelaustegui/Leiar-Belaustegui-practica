@@ -1,0 +1,507 @@
+/*@import url(fonts.css);*/
+
+* {
+    box-sizing: border-box; /* il comportamento di default è content-box, con border-box, larghezza e altezza includono anche il padding e i bordi, rendendo più intutivo il calcolo delle dimensioni */
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 83px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.contenitore {
+    max-width: 1100px; /* o quello che volete */
+    margin: 0 auto; /* per centrare quel contenitore nella pagina */
+}
+
+/* Navbar*/
+header {
+    background-color: white;
+    color: #7E6B4C;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 45px;
+    margin-right:100px;
+}
+
+header a {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #7E6B4C;
+    text-decoration: none;
+}
+
+header p a{
+    color: #BD4742;
+    font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+header a:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+/* Navbar final*/
+
+/* Portada*/
+.portada {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#F5F0E7;
+    color:black;
+}
+.portada img {
+    width: 708px;
+    height: 571px;
+    margin-left: 0;
+}
+.portada-content {
+    width: 60%;
+    padding: 50px;
+    margin-top: 90px;
+    color: #7E6B4C;
+}
+.portada-content h1 {
+    font-size: 70px;
+    font-family: "Italiana", serif;
+  font-weight: 400;
+  font-style: normal;
+    width: 511px;
+    height: 203px;
+    line-height: 100%;
+}
+.portada-content p{
+    font-size: 20px;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    width: 399px;
+    height: 57px;
+    margin-top: 62px;
+}
+/* Portada fin*/
+ 
+/* Estilos específicos por sección */
+/* Introduzione */
+
+
+#introduzione {
+    text-align: center;
+    margin-bottom: 300px;
+
+}
+#introduzione p {
+    align-items: center;
+    padding-top: 150px;
+    margin-left: 413px;
+    width: 614px;
+    height: 235px;
+    font-size: 20px;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 120%;
+}
+/* Info */
+/* sección 1 */
+#paesaggi {
+    width: 1440px;
+    height: 645px;
+    background-color: #879465;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 160px;
+   
+}
+#paesaggi img {
+    width: 422.667px;
+    height: 235px;
+    border-radius: 50px;
+    margin-top: 150px;
+   
+}
+    #paesaggi .text {
+        width: 576px;
+        height: 243px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+#paesaggi h2 {
+    font-size: 44px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 109%;
+    width: 318px;
+height: 90px;   
+    color: white ;
+    margin-bottom: 50px;
+}
+
+#paesaggi p {
+    font-size: 16px;
+    line-height: 120%;
+    color: white;
+    width: 576px;
+   height: 243px;
+   margin-bottom: 16px; 
+}
+/* sección 2 */
+#fauna {
+    background-color:#F5F0E7;
+    width: 1440px;
+    height: 645px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 160px;   
+}
+
+#fauna img {
+    width: 480px;
+    height: 381px;
+    border-radius: 80px 0px;
+    margin-top: 150px;
+   
+}
+#fauna .text {
+        height: 243px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+#fauna h2 {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 44px;
+    line-height: 109%;
+    width: 508px;
+    height: 92px;
+    color:black ;
+    margin-bottom: 50px;
+}
+
+#fauna p {
+    margin-bottom: 16px; 
+    font-size: 16px;
+    line-height: 120%;
+    color:black;
+    width: 473px;
+    height: 249px;
+}
+/* sección 3 */
+#attivita {
+    width: 1440px;
+    height: 645px;
+    background-color:#F5F0E7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 400px 160px;    
+}
+
+#attivita img {
+    width: 480px;
+    height: 381px;
+    border-radius: 0px 80px;
+    margin-top: 150px;
+   
+}
+#attivita .text {
+        height: 445px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+#attivita h2 {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 44px;
+    line-height: 109%;
+    width: 508px;
+    height: 92px;
+    color:black ;
+    margin-bottom: 50px;
+}
+
+#attivita p {
+    margin-bottom: 16px; 
+    font-size: 16px;
+    line-height: 120%;
+    color:black;
+    width: 473px;
+    height: 249px;
+}
+/* sección 4 */
+#flora {
+    width: 1440px;
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+#flora img {
+    width: 660px;
+    height: 701px;
+    object-fit: cover;
+   
+}
+#flora .text {
+        height: 445px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding-right: 160px;
+    }
+
+#flora h2 {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 44px;
+    line-height: 109%;
+    width: 508px;
+    height: 92px;
+    color:black ;
+    margin-bottom: 50px;
+}
+
+#flora p {
+    margin-bottom: 16px; 
+    font-size: 16px;
+    line-height: 120%;
+    color:black;
+    width: 473px;
+    height: 249px;
+}
+/* sección 5 */
+#cultura {
+    width: 1440px;
+    background-color:#879465;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+#cultura img {
+    width: 660px;
+    height: 701px;
+    object-fit: cover;
+   
+}
+#cultura .text {
+        height: 350px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding-left: 160px;
+    }
+
+#cultura h2 {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 44px;
+    line-height: 109%;
+    width: 508px;
+    height: 92px;
+    color:white ;
+    margin-bottom: 50px;
+}
+
+#cultura p {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 120%;
+    color:white;
+    width: 485px;
+    height: 249px;
+}
+/* sección 6 */
+#conservazione {
+    width: 1440px;
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    padding: 100px;  
+}
+#conservazione .text {
+
+    width: 576px;
+    height: 487px;
+    color: white;
+    display: flex;
+    border-radius: 80px;
+   background: #F5F0E7;
+    flex-direction: column;
+    margin: 100px 300px;
+}
+
+#conservazione h2{
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+font-size: 44px;
+line-height: 109%;
+width: 379px;
+height: 88px;
+color:black ;
+margin-left: 98px;
+margin-bottom: 50px;
+margin-top: 75px;
+}
+
+#conservazione p {
+margin-left: 98px;
+margin-bottom: 16px;
+font-size: 16px;
+line-height: 120%;
+color:black;
+width: 379px;
+height: 164px;
+}
+/* sección 7 */
+#accesso {
+    width: 1444px;
+    height: 850px;
+    background-color:#F5F0E7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px;  
+    padding-bottom: 150px;
+}
+
+#accesso img {
+    width: 480px;
+    height: 381px;
+    border-radius: 80px;
+    margin-top: 260px;
+   
+}
+#accesso .text {
+        height: 445px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+#accesso h2 {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 44px;
+    line-height: 109%;
+    width: 463px;
+    height: 132px;
+    color:black ;
+    margin-bottom: 50px;
+}
+
+#accesso p {
+    margin-bottom: 16px; 
+    font-size: 16px;
+    line-height: 120%;
+    color:black;
+    width: 473px;
+    height: 249px;
+}
+      /* footer*/
+footer {
+    height: 100px;
+   background-color: #879465;
+   color: white;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    width: 100%;
+}
+footer small {
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+footer nav ul {
+    margin-top: 20px;
+    display: flex;
+    list-style-type: none;
+    gap: 32px;
+    
+}
+
+footer nav ul a {
+    color: rgba(255, 255, 255, 0.6); 
+    font-size: 14px;
+}
+
+
+
+@media (max-width:700px) /* o la misura che volete */  {
+    .flex {
+        flex-direction: column-reverse;
+    }
+
+    header {
+        flex-direction: column;
+        align-items:start
+    }
+
+    div.flex-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .testo, .immagine {
+        width: 100%;
+    }
+}
